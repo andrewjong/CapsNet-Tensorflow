@@ -5,5 +5,6 @@ root_dir="."
 
 for size in 8 24 32 64
 do
+	echo Using prediction vector size "$size"
 	python "$root_dir"/main.py --results "$root_dir"/results/"$sub_dir"/"$size" --logdir="$root_dir"/logdir/"$sub_dir"/"$size" --prediction_vector_size "$size"
 done
